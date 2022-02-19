@@ -1,0 +1,46 @@
+//Variables
+$font-size-base: 16px;
+$font-weight-base: 400;
+$line-height-base: 1.2;
+
+$ff-sans-serif: 'aktiv-grotesk-arabic', Helvetica, Arial, sans-serif;
+$ff-serif: Georgia, 'Times New Roman', Times, serif;
+
+$t-duration: 0.4s;
+
+$shell-max-width: 1234px;
+$shell-gutter: 15px;
+
+$c-black: #000;
+$c-white: #fff;
+$c-base: #055590;
+$c-pink: #ec1f8e;
+
+$responsive-ios: 812px;
+
+$breakpoints: (
+    mobile-small: 374px,
+    mobile-medium: 575px,
+    mobile: 767px,
+    admin-bar: 782px,
+    tablet: 1023px,
+    small-desktop: 1199px,
+    large-desktop: 1399px,
+);
+
+$colorBg: #222a30;
+$colorOutline: #ffffff;
+$colorOutlineFade: #4e5559;
+
+$widthMouse: 52px;
+$heightMouse: 88px;
+$borderMouse: 6px;
+
+$posMouse: 8px;
+$posText: 2px;
+
+$sizeTrackball: 10px;
+$posTrackball: 20px;
+$shrinkTrackball: 0.4;
+
+$animDuration: 5s;
