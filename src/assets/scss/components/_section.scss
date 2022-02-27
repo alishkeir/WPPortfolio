@@ -1,0 +1,18 @@
+.section {
+    margin-top: 2rem;
+    width: 100%;
+
+    .shell {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin: 0 auto;
+
+        @include breakpoint-down(tablet) {
+            padding: 0 2rem;
+            width: 100%;
+        }
+    }
+}

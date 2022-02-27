@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Video from '../../assets/temp/rain.mp4';
 import Aos from 'aos';
+import GameCard from '../../components/game-card/GameCard';
 
 const Home = () => {
     useEffect(() => {
@@ -8,7 +9,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className='wrapper'>
+        <div className='wrapper' id='home'>
             <div className='hero' id='hero'>
                 <video autoPlay muted loop className='hero-video'>
                     <source src={Video} type='video/mp4' />
@@ -20,7 +21,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='about'>
+            <section className='section about' id='about'>
                 <div className='shell'>
                     <h2>About Me!</h2>
                     <p data-aos='fade-left'>
@@ -38,7 +39,27 @@ const Home = () => {
                         magni nobis.
                     </p>
                 </div>
-            </div>
+            </section>
+            <section className='section games' id='games'>
+                <div className='shell'>
+                    <div className='game-cards-container'>
+                        <div className='game-cards-flex'>
+                            <GameCard index={0} />
+                            <GameCard index={1} />
+                            <GameCard index={2} />
+                            <GameCard index={3} />
+                            <GameCard index={4} />
+                            <GameCard index={5} />
+                            <GameCard index={6} />
+                            <GameCard index={7} />
+                            <GameCard index={8} />
+                            <GameCard index={9} />
+                            <GameCard index={10} />
+                            <GameCard index={11} />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };

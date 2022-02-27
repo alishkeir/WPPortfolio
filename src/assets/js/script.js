@@ -1,11 +1,12 @@
 import $ from 'jquery';
 
 //? Smooth scroll
+
 $(document).on('click', '.nav__link, .scrollto', function (e) {
     if (
-        location.pathname.replace(/^\//, '') ==
+        window.location.pathname.replace(/^\//, '') ===
             this.pathname.replace(/^\//, '') &&
-        location.hostname == this.hostname
+        window.location.hostname === this.hostname
     ) {
         e.preventDefault();
         var target = $(this.hash);
@@ -18,13 +19,16 @@ $(document).on('click', '.nav__link, .scrollto', function (e) {
                 },
                 30
             );
-
             if ($('.nav').hasClass('show')) {
                 $('.nav').removeClass('show');
             }
 
             if ($('body').hasClass('no-scroll')) {
                 $('body').removeClass('no-scroll');
+            }
+
+            if ($('html').hasClass('no-scroll')) {
+                $('html').removeClass('no-scroll');
             }
         }
     }
@@ -47,4 +51,19 @@ $(window).on('scroll', function () {
 $(document).on('click', '#toggle-menu,#close-menu', () => {
     $('#nav-menu').toggleClass('show');
     $('body').toggleClass('no-scroll');
+    $('html').toggleClass('no-scroll');
+});
+
+$(document).on('click', (e) => {
+    if (
+        e.target.className !== 'nav__link' &&
+        e.target.className !== 'nav__item' &&
+        e.target.className !== 'nav__list' &&
+        e.target.id !== 'nav-menu' &&
+        e.target.id !== 'toggle-menu'
+    ) {
+        $('#nav-menu').removeClass('show');
+        $('body').removeClass('no-scroll');
+        $('html').removeClass('no-scroll');
+    }
 });

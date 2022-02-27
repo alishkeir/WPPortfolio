@@ -1,6 +1,17 @@
 /* ------------------------------------------------------------ *\
 	Base
 \* ------------------------------------------------------------ */
+html {
+    font-size: $font-size-base;
+    scroll-behavior: smooth;
+    width: 100vw;
+    overflow-x: hidden;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
 body {
     min-width: 320px;
     background: #fff;
@@ -23,11 +34,6 @@ body {
 ::-webkit-scrollbar-thumb {
     border-radius: 1rem;
     background-color: #e81241;
-}
-
-html {
-    font-size: $font-size-base;
-    scroll-behavior: smooth;
 }
 
 a {

@@ -6,8 +6,10 @@
 @import 'generic/base';
 @import 'generic/helpers';
 
+@import './components/section';
 @import './components/about';
 @import './components/header';
 @import './components/hero';
 @import './components/scroll';
 @import './components/wrapper';
+@import './components/game-cards';
