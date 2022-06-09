@@ -1,23 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Video from '../../assets/temp/rain.mp4';
 import Aos from 'aos';
 import GameCard from '../../components/game-card/GameCard';
-import axios from 'axios';
+
+Aos.init({ duration: 700 });
 
 const Home = () => {
-    useEffect(() => {
-        Aos.init({ duration: 700 });
-    }, []);
-
-    axios
-        .get('/src/assets/json/data.json')
-        .then((res) => {
-            console.log(res);
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-
     return (
         <div className='wrapper' id='home'>
             <div className='hero' id='hero'>
@@ -64,16 +52,16 @@ const Home = () => {
                                 title='Castle Hunt'
                                 description='A Simple Platform Melee Game for PC'
                                 image={require('../../assets/images/temp/CH.png')}
-                                class='light'
-                                opacity='0.1'
+                                youtube='#'
+                                github='#'
                             />
                             <GameCard
                                 index={1}
                                 title='Fruit VR'
                                 description='"Fruit Ninja" like game targeting the Oculus Quest 2'
                                 image={require('../../assets/images/temp/FNVR.jpg')}
-                                class='light'
-                                opacity='0.5'
+                                youtube='#'
+                                github='#'
                             />
                             <GameCard index={2} />
                         </div>

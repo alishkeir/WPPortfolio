@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/svg/logo.svg';
 
 const Header = () => {
@@ -35,7 +36,7 @@ const Header = () => {
                     </li>
                     <li className='nav__item'>
                         <a href='#portfolio' className='nav__link'>
-                            Portfolio
+                            <Link to='/games'>Portfolio</Link>
                         </a>
                     </li>
                     <li className='nav__item'>

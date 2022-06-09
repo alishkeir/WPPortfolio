@@ -31,7 +31,12 @@ const GameCard = (props) => {
                 </div>
 
                 <div className='game-footer'>
-                    <a href='##'>View Details</a>
+                    <a className='link youtube' href={props.youtube}>
+                        Watch on YouTube
+                    </a>
+                    <a className='link github' href={props.github}>
+                        View on GitHub
+                    </a>
                 </div>
             </div>
         </div>

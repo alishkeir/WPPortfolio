@@ -4,6 +4,7 @@ import {
     Redirect,
     Route,
     Routes,
+    Switch,
 } from 'react-router-dom';
 
 import './assets/js/script';
@@ -12,10 +13,11 @@ import Home from './pages/home/Home';
 
 function App() {
     return (
-        <Router>
+        <Router pathname='/'>
             <Header />
             <Routes>
-                <Route exact={true} path='/' element={<Home />} />
+                <Route path='/' element={<Home />} />
+                <Route path='/games' element={<Home />} />
             </Routes>
         </Router>
     );
