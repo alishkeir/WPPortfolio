@@ -1,34 +1,39 @@
 import React from 'react';
 
 const GameCard = (props) => {
+    console.log(props);
+
+    var className = '';
+    if (props.class) {
+        className = props.class;
+    }
     return (
         <div
-            className='game-card'
+            className={`game-card ${className}`}
             data-aos='zoom-in-up'
-            data-aos-delay={props.index * 100}
+            data-aos-duration={props.index * 100}
         >
             <div className='game-content'>
                 <div className='game-header'>
-                    <h3>Lorem Ipsum</h3>
+                    <img src={props.image} alt='' />
+                </div>
+                <div className='game-subheader'>
+                    <h3>{props.title}</h3>
                 </div>
                 <div className='game-body'>
-                    <p>
-                        Anim fugiat sit commodo in excepteur proident occaecat
-                        amet sint aliqua nisi aliqua aute.
-                    </p>
-                    <a href='##'>View Details</a>
+                    <p>{props.description}</p>
+
+                    <div className='technologies'>
+                        <span className='technology cpp'>C++</span>
+                        <span className='technology unreal'>UE4</span>
+                        <span className='technology blueprint'>Blueprints</span>
+                    </div>
                 </div>
 
                 <div className='game-footer'>
-                    <span className='technology cpp'>C++</span>
-                    <span className='technology unreal'>UE4</span>
+                    <a href='##'>View Details</a>
                 </div>
             </div>
-
-            <img
-                src='https://media.giphy.com/media/13Vb4FWqXtjP3y/giphy.gif'
-                alt=''
-            />
         </div>
     );
 };

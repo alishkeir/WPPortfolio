@@ -16,7 +16,7 @@
   <g/>
   <g/>
   <g/>
-  <path style="fill:#E81241;" d="M 255.728 37.303 L 454.061 147.222 L 454.061 364.777 L 255.728 474.697 L 57.395 364.778 L 57.395 147.222 L 255.728 37.303 M 255.728 0 L 24.773 128 L 24.773 384 L 255.728 512 L 486.683 384 L 486.683 128 L 255.728 0 Z"/>
+  <path style="fill:#e60000;" d="M 255.728 37.303 L 454.061 147.222 L 454.061 364.777 L 255.728 474.697 L 57.395 364.778 L 57.395 147.222 L 255.728 37.303 M 255.728 0 L 24.773 128 L 24.773 384 L 255.728 512 L 486.683 384 L 486.683 128 L 255.728 0 Z"/>
   <g transform="matrix(1, 0, 0, 1, 303.108957, 0)"/>
   <g transform="matrix(1, 0, 0, 1, 303.108957, 0)"/>
   <g transform="matrix(1, 0, 0, 1, 303.108957, 0)"/>
@@ -32,5 +32,5 @@
   <g transform="matrix(1, 0, 0, 1, 303.108957, 0)"/>
   <g transform="matrix(1, 0, 0, 1, 303.108957, 0)"/>
   <g transform="matrix(1, 0, 0, 1, 303.108957, 0)"/>
-  <text style="fill: #E81241;; font-family: Arial, sans-serif; font-size: 17.4px; stroke: rgb(164, 203, 36); stroke-width: 0px; white-space: pre;" transform="matrix(19.266846, 0, 0, 13.044611, -3914.443604, -2324.077393)" x="210.751" y="203.312">A</text>
+  <text style="fill: #e60000;; font-family: Arial, sans-serif; font-size: 17.4px; stroke: rgb(164, 203, 36); stroke-width: 0px; white-space: pre;" transform="matrix(19.266846, 0, 0, 13.044611, -3914.443604, -2324.077393)" x="210.751" y="203.312">A</text>
 </svg>

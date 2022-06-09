@@ -11,7 +11,7 @@
                 display: grid;
                 grid-gap: 1rem;
                 padding: 1rem;
-                grid-template-columns: repeat(4, 0fr);
+                grid-template-columns: repeat(3, 0fr);
 
                 @include breakpoint-down(tablet) {
                     grid-template-columns: repeat(3, 0fr);
@@ -25,27 +25,20 @@
                 }
 
                 .game-card {
-                    width: 14.375rem;
-                    height: 18.75rem;
-                    border-radius: 1rem;
+                    width: 20rem;
+                    height: 33rem;
                     border: 0;
-                    padding: 1.5rem;
+                    // padding: 1.5rem;
                     position: relative;
                     display: flex;
                     flex-direction: column;
                     transition: 0.4s ease-out;
-                    box-shadow: 0rem 0.4375rem 0.625rem rgba(0, 0, 0, 0.8);
                     overflow: hidden;
-                    color: #000;
 
                     img {
                         width: 100%;
-                        height: 100%;
+                        height: 20rem;
                         object-fit: cover;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        z-index: 0;
                     }
 
                     .game-content {
@@ -57,66 +50,49 @@
                         align-items: center;
 
                         .game-header {
-                            margin-bottom: 1rem;
-
+                            margin-bottom: 0.5rem;
+                            width: 100%;
+                        }
+                        .game-subheader {
                             h3 {
+                                margin-bottom: 0.5rem;
+
                                 font-size: 1.6rem;
                             }
                         }
-
                         .game-body {
                             margin-bottom: 1rem;
                             height: 100%;
                             display: flex;
                             flex-direction: column;
+                            justify-content: space-between;
+                            padding: 0 1rem;
+                            width: 100%;
 
-                            a {
-                                position: relative;
-                                border: 0.125rem solid #ee3568;
-                                border-radius: 0.1875rem;
-                                font-size: 0.9375rem;
-                                font-family: sans-serif;
-                                text-decoration: none;
-                                color: #000;
-                                letter-spacing: 0.125rem;
+                            p {
                                 text-align: center;
-                                overflow: hidden;
-                                z-index: 0;
-                                padding: 0.4375rem;
-                                transition: 0.7s;
-                                font-weight: bold;
-                                cursor: pointer;
-                                margin: auto 0 0;
+                            }
+                            .technologies {
+                                display: flex;
+                                justify-content: center;
+                                .technology {
+                                    margin-right: 0.4rem;
+                                    font-size: 0.7rem;
+                                    padding: 0 0.3rem;
+                                    height: 1.2rem;
+                                    line-height: 1.2rem;
 
-                                &:before {
-                                    content: '';
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    opacity: 0;
-                                    background-color: #ee3568;
-                                    transition: all 0.7s;
-                                    transform: scale(0, 1.1);
-                                    transform-origin: center;
-                                    z-index: -1;
-                                    outline: none;
-                                }
-
-                                &:hover {
-                                    transition-duration: 0.7s;
-                                    transition-delay: 0.5s;
-
-                                    &:before {
-                                        opacity: 1;
-                                        transform: scale(1.1, 1.1);
-                                        transition-duration: 1s;
+                                    &.cpp {
+                                        background-color: aqua;
                                     }
-                                }
 
-                                &:focus {
-                                    outline: none;
+                                    &.unreal {
+                                        background-color: #ee3568;
+                                    }
+
+                                    &.blueprint {
+                                        background-color: #3333ff;
+                                    }
                                 }
                             }
                         }
@@ -125,21 +101,36 @@
                             display: flex;
                             margin: auto 0 0;
                             width: 100%;
+                            justify-content: center;
+                            padding: 0 1rem 1rem;
 
-                            .technology {
-                                margin-right: 0.4rem;
-                                font-size: 0.7rem;
-                                padding: 0 0.3rem;
-                                height: 1rem;
-                                line-height: 1rem;
-                                color: #000;
+                            a {
+                                position: relative;
+                                background-color: #b30000;
+                                border-radius: 0.1875rem;
+                                font-size: 0.9375rem;
+                                font-family: sans-serif;
+                                text-decoration: none;
+                                color: #fff;
+                                letter-spacing: 0.125rem;
+                                text-align: center;
+                                overflow: hidden;
+                                z-index: 0;
+                                padding: 0.7rem 0.5rem;
+                                transition: 0.2s;
+                                font-weight: bold;
+                                cursor: pointer;
+                                width: 10rem;
+                                margin: 0 auto;
 
-                                &.cpp {
-                                    background-color: aqua;
+                                &:hover {
+                                    // transition-duration: 0.7s;
+                                    // transition-delay: 0.5s;
+                                    background-color: #800000;
                                 }
 
-                                &.unreal {
-                                    background-color: #ee3568;
+                                &:focus {
+                                    outline: none;
                                 }
                             }
                         }
