@@ -1,0 +1,11 @@
+{
+    "name": "alishkeir/portfolio",
+    "require": {
+        "johnbillion/extended-template-parts": "^1.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
