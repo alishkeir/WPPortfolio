@@ -1,0 +1,203 @@
+/* ------------------------------------------------------------ *\
+  Helpers
+\* ------------------------------------------------------------ */
+
+/*  Clear  */
+
+.clear:after {
+	content: '';
+	line-height: 0;
+	display: table;
+	clear: both;
+}
+
+/* sr-only */
+
+.sr-only {
+	position: absolute;
+	width: 0.1rem;
+	height: 0.1rem;
+	padding: 0;
+	margin: -0.1rem;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+/*  Notext  */
+
+.notext {
+	white-space: nowrap;
+	text-indent: 100%;
+	text-shadow: none;
+	overflow: hidden;
+}
+
+.notext-old {
+	font-size: 0;
+	line-height: 0;
+	text-indent: -400rem;
+}
+
+/*  Hidden  */
+
+[hidden],
+.hidden {
+	display: none;
+}
+
+/*  Disabled  */
+
+[disabled],
+.disabled {
+	cursor: default;
+}
+
+/*  Responsive Helpers  */
+
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+	display: none !important;
+}
+
+@include breakpoint-down(mobile) {
+	.hidden-xs {
+		display: none !important;
+	}
+	.visible-xs-block {
+		display: block !important;
+	}
+	.visible-xs-inline {
+		display: inline !important;
+	}
+	.visible-xs-inline-block {
+		display: inline-block !important;
+	}
+}
+
+@include breakpoint-between(mobile,tablet) {
+	.hidden-sm {
+		display: none !important;
+	}
+	.visible-sm-block {
+		display: block !important;
+	}
+	.visible-sm-inline {
+		display: inline !important;
+	}
+	.visible-sm-inline-block {
+		display: inline-block !important;
+	}
+}
+
+@include breakpoint-between(tablet,small-desktop) {
+	.hidden-md {
+		display: none !important;
+	}
+	.visible-md-block {
+		display: block !important;
+	}
+	.visible-md-inline {
+		display: inline !important;
+	}
+	.visible-md-inline-block {
+		display: inline-block !important;
+	}
+}
+
+@include breakpoint-up(small-desktop) {
+	.hidden-lg {
+		display: none !important;
+	}
+	.visible-lg-block {
+		display: block !important;
+	}
+	.visible-lg-inline {
+		display: inline !important;
+	}
+	.visible-lg-inline-block {
+		display: inline-block !important;
+	}
+}
+
+.hidden-mobile {
+	/*  Mobile  */
+	
+	@include breakpoint-down(mobile) {
+		display: none; 
+	}
+}
+
+
+/* ------------------------------------------------------------ *\
+	Label
+\* ------------------------------------------------------------ */
+
+.label {
+	display: inline-block; 
+	font-size: 2.8rem; 
+	font-weight: 700; 
+	color: #fff; 
+	padding: 0.3rem 0.6rem;
+	line-height: 1; 
+
+	&--white-text {
+		color: #fff !important; 
+	}
+
+	&--dark-text {
+		color: #343434 !important; 
+	}
+
+	&--green {
+		background: #98CA3C; 
+	}
+
+	&--yellow {
+		background: #FFCD04;
+		color: #343434;  
+	}
+
+	&--orange {
+		background: #F26821;
+		color: #343434;  
+	}
+
+	&--green-alt {
+		background: #98CA3C;
+		color: #343434;  
+	}
+
+	&--blue {
+		background: #36C6F4;
+		color: #343434;  
+	}
+
+	&--pink {
+		background: #ED1B68;
+		color: #fff;  
+	}
+
+	&--purple {
+		background: #84459A;
+		color: #fff;  
+	}
+
+	&--small {
+		padding: 0.3rem 0.5rem;
+		font-size: 1.1rem; 
+		text-transform: uppercase; 
+		min-width: 4.6rem; 
+		text-align: center; 
+	}
+}
