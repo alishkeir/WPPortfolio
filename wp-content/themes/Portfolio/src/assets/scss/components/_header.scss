@@ -1,223 +1,151 @@
 /* ------------------------------------------------------------ *\
 	Header
 \* ------------------------------------------------------------ */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  overflow-y: auto;
+  background: $dark-lightest-background;
 
-.header {
-  position: relative;
-  padding-bottom: 4.7rem;
-
-  .header__body {
-    text-align: center;
-    padding: 1.5rem 0;
-
-    /*  Mobile  */
-
-    @include breakpoint-down(mobile) {
-      padding: 0;
-      margin: 0 -0.7rem;
-    }
+  @include breakpoint-down(small-desktop) {
+    left: -300px;
   }
 
-  .header__bar {
-    /*  Mobile  */
-
-    @include breakpoint-down(mobile) {
-      position: relative;
-    }
-  }
-
-  .header__bar-inner {
-    box-shadow: 0 0 0.3rem 0 rgba(0, 0, 0, 0.16);
-    padding: 1.3rem 0 0.4rem;
-    position: absolute;
-    top: 8.6rem;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    z-index: 100;
-    transition: padding 0.4s;
-
-    /*  Mobile  */
-
-    @include breakpoint-down(mobile) {
-      top: 0;
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 0.9rem;
-      background: url(../src/assets/images/temp/line-top.png) repeat-x 0 0;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.4s, visibility 0.4s;
-      background-size: 100% 100%;
-    }
-
-    .shell {
-      position: relative;
-
-      /*  Mobile  */
-
-      @include breakpoint-down(mobile) {
-        position: static;
-        padding: 0 0 0 7.2rem;
-      }
-    }
-
-    .search {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 1.5rem;
-      margin-top: -0.4rem;
-
-      /*  Mobile  */
-
-      @include breakpoint-down(mobile) {
-        top: 100%;
-        right: 0;
-        transform: translateY(0);
-        margin-top: 0;
-        background: #98ca3c;
-        width: 100%;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.4s, visibility 0.4s;
-      }
-    }
-  }
-
-  .btn-search {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4.6rem;
-    height: 4.8rem;
-    border-right: 0.1rem solid #d8d8d8;
-    transition: 0.4s;
-
-    /*  Mobile  */
-
-    @include breakpoint-down(mobile) {
+  .profile {
+    img {
+      margin: 15px auto;
       display: block;
+      width: 120px;
+      border: 8px solid $dark-subtitles-color;
     }
 
-    i {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
+    h1 {
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+      font-weight: 600;
+      -moz-text-align-last: center;
+      text-align-last: center;
+      font-family: Poppins, sans-serif;
 
-  /*  Header Fixed  */
-
-  &.is-fixed {
-    .header__bar-inner {
-      position: fixed;
-      top: 0;
-      padding: 2.2rem 0 0.6rem;
-
-      &:after {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-
-    .btn-search {
-      margin-top: 0.9rem;
-    }
-
-    &.is-admin-panel-visible {
-      .header__bar-inner {
-        top: 32px;
-        @include breakpoint-down(mobile) {
-          top: 46px;
-        }
+      a,
+      a:hover {
+        text-decoration: none;
+        color: $main-white;
       }
     }
   }
 
-  /*  Header Show Search  */
+  .nav-menu {
+    padding-top: 30px;
 
-  &.show-search {
-    .btn-search {
-      opacity: 0.5;
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
 
-    .header__bar {
-      .search {
-        opacity: 1;
-        visibility: visible;
-      }
+    ul > li {
+      position: relative;
+      white-space: nowrap;
     }
-  }
-}
-// ?___________________________________________________ LTR ___________________________________________________
-
-html[dir="rtl"] {
-  .header {
-    .header__bar-inner {
-      padding: 1.3rem 0 0.6rem;
-
-      left: unset;
-      right: 0;
-      top: 7.6rem;
-
-      &:after {
-        left: unset;
-        right: 0;
-      }
-
-      .shell {
-        @include breakpoint-down(mobile) {
-          padding: 0 7.2rem 0 0;
-        }
-      }
-
-      .search {
-        right: unset;
-        left: 1.5rem;
-        /*  Mobile  */
-
-        @include breakpoint-down(mobile) {
-          right: unset;
-          left: 0;
-        }
-      }
-    }
-
-    .btn-search {
-      right: 0;
-      left: unset;
-
-      border-right: none;
-      border-left: 0.1rem solid #d8d8d8;
+    a {
+      display: flex;
+      align-items: center;
+      padding: 8px 15px;
+      transition: 0.3s;
+      font-size: 15px;
 
       i {
-        left: unset;
-        right: 50%;
-        transform: translate(50%, -50%);
+        font-size: 24px;
+        padding-right: 8px;
+        color: $main-white;
+      }
+      span {
+        color: $darken-white;
       }
     }
 
-    &.is-fixed {
-      .header__bar-inner {
-        top: 0;
+    a {
+      text-decoration: none;
+      color: $main-white;
+      &:hover {
+        text-decoration: none;
+        color: $main-white;
+        i {
+          color: $dark-headers-color;
+        }
       }
-      &.is-admin-panel-visible {
-        .header__bar-inner {
-          top: 32px;
-          @include breakpoint-down(mobile) {
-            top: 46px;
+    }
+    li {
+      &:hover {
+        a {
+          text-decoration: none;
+          color: $main-white;
+          i {
+            color: $dark-headers-color;
+          }
+        }
+      }
+    }
+    .active {
+      a {
+        i {
+          color: $dark-headers-color;
+        }
+      }
+    }
+
+    .theme-toggle-list-item {
+      display: flex;
+      align-items: center;
+      padding: 8px 15px;
+
+      .theme-toggle {
+        -webkit-appearance: none;
+        position: relative;
+        cursor: pointer;
+
+        width: 60px;
+        height: 30px;
+        background-image: url("../../img/theme-toggle/light-background.webp");
+        background-size: cover;
+        border-radius: 50px;
+        outline: none;
+        transition: background-image 0.9s;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 30px;
+          width: 30px;
+          background-color: navy;
+          border-radius: 50px;
+          transition: all 0.9s;
+          background-color: #f7ca33;
+        }
+
+        &:checked {
+          background-image: url("../../img/theme-toggle/dark-background.png.webp");
+          transition: background-image 0.9s;
+
+          &:before {
+            transform: translate(100%);
+            transition: all 0.9s;
+            background-color: #ecf0f3;
           }
         }
       }
     }
   }
 }
+

@@ -16,6 +16,25 @@ $c-black: #000;
 $c-white: #fff;
 $c-base: #055590;
 
+$main-white: darken(#ffffff, 2%);
+$darken-white: darken(#ffffff, 5%);
+$darkest-white: darken(#ffffff, 7%);
+$black: #000;
+
+$dark-main-background: lighten(#000000, 3%);
+$dark-sub-background: lighten(#000000, 6%);
+$dark-lightest-background: lighten(#000000, 9%);
+
+$dark-headers-color: darken(#ff0000, 15%);
+$dark-titles-color: darken(#ff0000, 20%);
+$dark-subtitles-color: darken(#ff0000, 25%);
+
+$dark-main-selected-background: #ffffff;
+$dark-main-selected-color: #000000;
+
+$dark-minor-selected-background: darken(#ff0000, 20%);
+$dark-minor-selected-color: darken(#ffffff, 7%);
+
 $responsive-ios: 812px;
 
 $breakpoints: (

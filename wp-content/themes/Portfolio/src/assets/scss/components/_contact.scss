@@ -1,0 +1,62 @@
+.contact {
+  .info {
+      background: $dark-sub-background;
+      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
+      i {
+          color: $dark-titles-color;
+          &::selection {
+              background: $dark-main-selected-background !important;
+              color: $dark-main-selected-color !important;
+          }
+
+          background: $dark-main-background;
+      }
+      h4 {
+          color: $dark-titles-color;
+          &::selection {
+              background: $dark-main-selected-background !important;
+              color: $dark-main-selected-color !important;
+          }
+      }
+      p {
+          color: inherit;
+      }
+
+      .address:hover i,
+      .email:hover i,
+      .phone:hover i {
+          background: $dark-headers-color;
+          color: $main-white;
+      }
+  }
+
+  .email-form {
+      background: $dark-sub-background;
+      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+      input,
+      textarea {
+          background: $dark-main-background;
+          border: none;
+          color: $darkest-white;
+
+          &:focus {
+              box-shadow: 0 0 0 3px $dark-subtitles-color;
+          }
+      }
+
+      button[type='submit'] {
+          background: $dark-titles-color;
+          color: $darkest-white;
+
+          &::selection {
+              background: $dark-main-selected-background !important;
+              color: $dark-main-selected-color !important;
+          }
+
+          &:hover {
+              background: $dark-subtitles-color;
+          }
+      }
+  }
+}

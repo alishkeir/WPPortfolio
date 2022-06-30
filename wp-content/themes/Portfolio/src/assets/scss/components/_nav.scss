@@ -1,88 +1,29 @@
-/* ------------------------------------------------------------ *\
-	Nav
-\* ------------------------------------------------------------ */
+.mobile-nav-active {
+  overflow: hidden !important;
 
-.nav {
-  font-size: 1.5rem;
-  font-weight: 700;
-  display: inline-block;
-  max-width: 87rem;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-
-  /*  Small Desktop  */
-
-  @include breakpoint-down(small-desktop) {
-    max-width: calc(100% - 31.5rem);
-  }
-
-  /*  Mobile  */
-
-  @include breakpoint-down(mobile) {
-    max-width: 100%;
-
-    &::-webkit-scrollbar {
-      height: 0.3rem;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: #bfbfbf;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    transition: opacity 0.4s;
-
-    &:hover {
-      opacity: 0.7;
-    }
-  }
-
-  li {
-    display: inline-block;
-
-    + li {
-      margin-left: 6.7rem;
-
-      /*  Large Desktop  */
-
-      @include breakpoint-down(large-desktop) {
-        margin-left: 6rem;
-      }
-
-      /*  Mobile  */
-
-      @include breakpoint-down(mobile) {
-        margin-left: 2.8rem;
-      }
-    }
+  #header {
+    left: 0 !important;
   }
 }
-// ?___________________________________________________ LTR ___________________________________________________
 
-html[dir="rtl"] {
-  .nav {
-    li {
-      display: inline-block;
-
-      + li {
-        margin-right: 6.7rem;
-        margin-left: 0;
-
-        /*  Large Desktop  */
-
-        @include breakpoint-down(large-desktop) {
-          margin-right: 6rem;
-        }
-
-        /*  Mobile  */
-
-        @include breakpoint-down(mobile) {
-          margin-right: 2.8rem;
-        }
-      }
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: 0 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: 0 !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+  i {
+    color: $dark-headers-color;
+    &::selection {
+      background: $dark-main-selected-background !important;
+      color: $dark-main-selected-color !important;
     }
   }
 }

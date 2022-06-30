@@ -1,26 +1,65 @@
 /* ------------------------------------------------------------ *\
 	Base
 \* ------------------------------------------------------------ */
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
 html {
   font-size: 62.5%;
 
-  &[lang="ar"] {
-    font-size: 75%;
-    body {
-      font-family: $ff-sans-serif-ar;
-    }
-  }
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
 }
 
 body {
   min-width: 32rem;
-  background: #fff;
-  font-family: $ff-sans-serif;
   font-weight: $font-weight-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  color: #343434;
+  color: $darkest-white;
+  background: $dark-main-background;
+
+  font-family: "Open Sans", sans-serif;
+  overflow: overlay;
+  margin: 0;
+
+  *::selection:not(button) {
+    background: $dark-minor-selected-background;
+    color: $dark-minor-selected-color;
+  }
+
+  a {
+    // color: $dark-headers-color;
+    &::selection:not(:hover) {
+      background: $dark-main-selected-background !important;
+      color: $dark-main-selected-color !important;
+    }
+
+    &:hover {
+      color: $dark-subtitles-color !important;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $dark-headers-color;
+  }
+  &::-webkit-scrollbar-track {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &::-webkit-resizer {
+    display: none;
+  }
 }
 
 a {
@@ -48,74 +87,5 @@ h4,
 h5,
 .h6,
 h6 {
-  margin-bottom: calc(#{$line-height-base}em / 2);
-  font-weight: 700;
-}
-
-.h1,
-h1 {
-  font-size: 2.8rem;
-  line-height: 1.21;
-}
-
-.h2,
-h2 {
-  font-size: 2.4rem;
-  line-height: 1.21;
-}
-
-.h3,
-h3 {
-  font-size: 2.2rem;
-  line-height: 1.18;
-}
-
-.h4,
-h4 {
-  font-size: 2rem;
-  line-height: 1.2;
-}
-
-.h5,
-h5 {
-  font-size: 1.7rem;
-  line-height: 1.2;
-}
-
-.h6,
-h6 {
-  font-size: 1.3rem;
-  line-height: 1;
-  font-weight: 400;
-}
-
-p,
-ul,
-ol,
-dl,
-hr,
-table,
-blockquote {
-  margin-bottom: #{$line-height-base}em;
-}
-
-h1[class],
-h2[class],
-h3[class],
-h4[class],
-h5[class],
-h6[class],
-h1:last-child,
-h2:last-child,
-h3:last-child,
-h4:last-child,
-h5:last-child,
-h6:last-child,
-p:last-child,
-ul:last-child,
-ol:last-child,
-dl:last-child,
-table:last-child,
-blockquote:last-child {
-  margin-bottom: 0;
+  font-family: Raleway, sans-serif;
 }

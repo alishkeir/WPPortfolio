@@ -1,15 +1,14 @@
 /*
  * Modules
  */
-import "./js/modules/click-handlers";
-import "./js/modules/slider";
-import "./js/modules/stuck-header";
+
 import "./js/modules/script";
+import "./js/modules/backToTop";
+import "./js/modules/mobileNavToggle";
+import "./js/modules/ScrollToSection";
+import "./js/modules/smoothScroll";
+import "./js/modules/typed";
 
 /*
  * Utils
  */
-
-import "./js/utils/globals";
-
-import "./js/vendor/slick";

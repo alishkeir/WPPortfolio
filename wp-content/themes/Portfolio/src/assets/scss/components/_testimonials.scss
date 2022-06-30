@@ -1,0 +1,41 @@
+.testimonials {
+  .testimonials-item {
+    h3 {
+      color: $darken-white;
+    }
+    h4 {
+      color: $darkest-white;
+    }
+
+    .quote-icon-left,
+    .quote-icon-right {
+      color: $dark-subtitles-color;
+      &::selection {
+        background: $dark-main-selected-background !important;
+        color: $dark-main-selected-color !important;
+      }
+    }
+
+    p {
+      background: $main-white;
+
+      &::after {
+        border-top: 20px solid $main-white;
+      }
+    }
+  }
+
+  .owl-page {
+    background-color: $darken-white !important;
+  }
+
+  .owl-pagination {
+    .active {
+      background-color: $dark-headers-color !important;
+      &::selection {
+        background: $dark-main-selected-background !important;
+        color: $dark-main-selected-color !important;
+      }
+    }
+  }
+}

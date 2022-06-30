@@ -1,0 +1,76 @@
+#hero {
+  height: 100vh;
+  background-size: cover;
+  margin-left: 300px;
+  background: url(/wp-content/themes/Portfolio/src/assets/images/hero/dark.svg)
+    top center;
+  transition: all 0.5s;
+
+  @include breakpoint-down(small-desktop) {
+    margin-left: 0;
+  }
+
+  @include breakpoint-up(tablet) {
+    background-attachment: fixed;
+
+    h1 {
+      font-size: 64px;
+    }
+
+    p {
+      font-size: 34px;
+    }
+  }
+
+  @include breakpoint-down(tablet) {
+    h1 {
+      font-size: 40px;
+      line-height: 36px;
+    }
+
+    p {
+      font-size: 25px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+
+    h1 {
+      margin: 0 0 10px 0;
+      font-weight: 700;
+      line-height: 56px;
+      text-align: center;
+      color: $main-white;
+    }
+
+    p {
+      margin-bottom: 50px;
+      font-family: Poppins, sans-serif;
+      text-align: center;
+      color: $main-white;
+
+      span {
+        padding-top: 4px;
+        letter-spacing: 1px;
+
+        color: $main-white;
+        border-bottom: 3px solid $dark-headers-color;
+      }
+    }
+  }
+}
