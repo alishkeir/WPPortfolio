@@ -41,15 +41,15 @@ body {
   }
 
   &::-webkit-scrollbar {
-    width: 10px;
-    border-radius: 10px;
+    width: 1rem;
+    border-radius: 1rem;
     overflow: hidden;
   }
   &::-webkit-scrollbar-button {
     display: none;
   }
   &::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: $dark-headers-color;
   }
   &::-webkit-scrollbar-track {

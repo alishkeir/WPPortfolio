@@ -6,28 +6,28 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 30rem;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
-  padding: 0 15px;
+  padding: 3rem 1.5rem 0;
   overflow-y: auto;
   background: $dark-lightest-background;
 
   @include breakpoint-down(small-desktop) {
-    left: -300px;
+    left: -30rem;
   }
 
   .profile {
     img {
-      margin: 15px auto;
+      margin: 1.5rem auto;
       display: block;
-      width: 120px;
-      border: 8px solid $dark-subtitles-color;
+      width: 12rem;
+      border: 0.8rem solid $dark-subtitles-color;
     }
 
     h1 {
-      font-size: 24px;
+      font-size: 2.4rem;
       margin: 0;
       padding: 0;
       font-weight: 600;
@@ -44,7 +44,7 @@
   }
 
   .nav-menu {
-    padding-top: 30px;
+    padding-top: 3rem;
 
     * {
       margin: 0;
@@ -59,13 +59,13 @@
     a {
       display: flex;
       align-items: center;
-      padding: 8px 15px;
+      padding: 0.8rem 1.5rem;
       transition: 0.3s;
-      font-size: 15px;
+      font-size: 1.5rem;
 
       i {
-        font-size: 24px;
-        padding-right: 8px;
+        font-size: 2.4rem;
+        padding-right: 0.8rem;
         color: $main-white;
       }
       span {
@@ -89,15 +89,17 @@
         a {
           text-decoration: none;
           color: $main-white;
-          i {
-            color: $dark-headers-color;
+          i,
+          span {
+            color: $dark-titles-color;
           }
         }
       }
     }
     .active {
       a {
-        i {
+        i,
+        span {
           color: $dark-headers-color;
         }
       }
@@ -106,18 +108,18 @@
     .theme-toggle-list-item {
       display: flex;
       align-items: center;
-      padding: 8px 15px;
+      padding: 0.8rem 1.5rem;
 
       .theme-toggle {
         -webkit-appearance: none;
         position: relative;
         cursor: pointer;
 
-        width: 60px;
-        height: 30px;
+        width: 6rem;
+        height: 3rem;
         background-image: url("../../img/theme-toggle/light-background.webp");
         background-size: cover;
-        border-radius: 50px;
+        border-radius: 5rem;
         outline: none;
         transition: background-image 0.9s;
 
@@ -126,10 +128,10 @@
           position: absolute;
           top: 0;
           left: 0;
-          height: 30px;
-          width: 30px;
+          height: 3rem;
+          width: 3rem;
           background-color: navy;
-          border-radius: 50px;
+          border-radius: 5rem;
           transition: all 0.9s;
           background-color: #f7ca33;
         }
@@ -148,4 +150,3 @@
     }
   }
 }
-

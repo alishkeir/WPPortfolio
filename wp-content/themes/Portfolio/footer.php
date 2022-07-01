@@ -17,13 +17,6 @@ get_template_part('template-parts/components/footer/footer', '', [])
 
 ?>
 
-
-
-</div>
-
-
-
-
 </body>
 
 </html>

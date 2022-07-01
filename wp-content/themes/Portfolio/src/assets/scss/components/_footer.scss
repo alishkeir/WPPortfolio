@@ -1,27 +1,25 @@
 #footer {
-  padding: 15px;
-  font-size: 14px;
+  padding: 1.5rem;
+  font-size: 1.4rem;
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 30rem;
   z-index: 9999;
+
+  @include breakpoint-down(small-desktop) {
+    position: static;
+    width: auto;
+    padding-right: 2rem 1.5rem;
+  }
 
   .copyright {
     text-align: center;
   }
 
   .credits {
-    padding-top: 5px;
+    padding-top: 0.5rem;
     text-align: center;
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
+    font-size: 1.3rem;
   }
 }

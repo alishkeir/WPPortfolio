@@ -1,62 +1,121 @@
 .contact {
   .info {
-      background: $dark-sub-background;
-      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 3rem;
+    width: 100%;
+    background: $dark-sub-background;
+    box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.12);
 
-      i {
-          color: $dark-titles-color;
-          &::selection {
-              background: $dark-main-selected-background !important;
-              color: $dark-main-selected-color !important;
-          }
+    i {
+      font-size: 2rem;
+      float: left;
+      width: 4.4rem;
+      height: 4.4rem;
 
-          background: $dark-main-background;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5rem;
+      -webkit-border-radius: 5rem;
+      -moz-border-radius: 5rem;
+      -ms-border-radius: 5rem;
+      -o-border-radius: 5rem;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+
+      color: $dark-titles-color;
+      background: $dark-main-background;
+
+      &::selection {
+        background: $dark-main-selected-background !important;
+        color: $dark-main-selected-color !important;
       }
-      h4 {
-          color: $dark-titles-color;
-          &::selection {
-              background: $dark-main-selected-background !important;
-              color: $dark-main-selected-color !important;
-          }
+    }
+    h4 {
+      padding: 0 0 0 6rem;
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: $dark-titles-color;
+      &::selection {
+        background: $dark-main-selected-background !important;
+        color: $dark-main-selected-color !important;
       }
+    }
+    p {
+      padding: 0 0 1rem 6rem;
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+      color: inherit;
+    }
+
+    .email {
       p {
-          color: inherit;
+        padding-top: 0.5rem;
       }
+    }
 
-      .address:hover i,
-      .email:hover i,
-      .phone:hover i {
-          background: $dark-headers-color;
-          color: $main-white;
-      }
+    .address:hover i,
+    .email:hover i,
+    .phone:hover i {
+      background: $dark-headers-color;
+      color: $main-white;
+    }
   }
 
   .email-form {
-      background: $dark-sub-background;
-      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-      input,
-      textarea {
-          background: $dark-main-background;
-          border: none;
-          color: $darkest-white;
+    width: 100%;
+    padding: 3rem;
+    background: $dark-sub-background;
+    box-shadow: 0 0 2.4rem 0 rgba(0, 0, 0, 0.12);
 
-          &:focus {
-              box-shadow: 0 0 0 3px $dark-subtitles-color;
-          }
+    .form-group {
+      padding-bottom: 0.8rem;
+    }
+
+    input {
+      height: 4.4rem;
+    }
+
+    input,
+    textarea {
+      padding: 1rem 1.2rem;
+      background: $dark-main-background;
+      border: none;
+      color: $darkest-white;
+
+      &:focus {
+        box-shadow: 0 0 0 0.3rem $dark-subtitles-color;
+      }
+    }
+
+    button[type="submit"] {
+      border: 0;
+      padding: 1rem 1.2rem;
+      transition: 0.4s;
+      -webkit-transition: 0.4s;
+      -moz-transition: 0.4s;
+      -ms-transition: 0.4s;
+      -o-transition: 0.4s;
+      border-radius: 0.4rem;
+      -webkit-border-radius: 0.4rem;
+      -moz-border-radius: 0.4rem;
+      -ms-border-radius: 0.4rem;
+      -o-border-radius: 0.4rem;
+
+      background: $dark-titles-color;
+      color: $darkest-white;
+
+      &::selection {
+        background: $dark-main-selected-background !important;
+        color: $dark-main-selected-color !important;
       }
 
-      button[type='submit'] {
-          background: $dark-titles-color;
-          color: $darkest-white;
-
-          &::selection {
-              background: $dark-main-selected-background !important;
-              color: $dark-main-selected-color !important;
-          }
-
-          &:hover {
-              background: $dark-subtitles-color;
-          }
+      &:hover {
+        background: $dark-subtitles-color;
       }
+    }
   }
 }

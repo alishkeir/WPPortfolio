@@ -1,7 +1,7 @@
 #hero {
   height: 100vh;
   background-size: cover;
-  margin-left: 300px;
+  margin-left: 30rem;
   background: url(/wp-content/themes/Portfolio/src/assets/images/hero/dark.svg)
     top center;
   transition: all 0.5s;
@@ -14,24 +14,24 @@
     background-attachment: fixed;
 
     h1 {
-      font-size: 64px;
+      font-size: 6.4rem;
     }
 
     p {
-      font-size: 34px;
+      font-size: 3.4rem;
     }
   }
 
   @include breakpoint-down(tablet) {
     h1 {
-      font-size: 40px;
-      line-height: 36px;
+      font-size: 4rem;
+      line-height: 3.6rem;
     }
 
     p {
-      font-size: 25px;
-      line-height: 24px;
-      margin-bottom: 30px;
+      font-size: 2.5rem;
+      line-height: 2.4rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -48,28 +48,28 @@
   .hero-container {
     position: relative;
     z-index: 2;
-    min-width: 300px;
+    min-width: 30rem;
 
     h1 {
-      margin: 0 0 10px 0;
+      margin: 0 0 1rem 0;
       font-weight: 700;
-      line-height: 56px;
+      line-height: 5.6rem;
       text-align: center;
       color: $main-white;
     }
 
     p {
-      margin-bottom: 50px;
+      margin-bottom: 5rem;
       font-family: Poppins, sans-serif;
       text-align: center;
       color: $main-white;
 
       span {
-        padding-top: 4px;
-        letter-spacing: 1px;
+        padding-top: 0.4rem;
+        letter-spacing: 0.1rem;
 
         color: $main-white;
-        border-bottom: 3px solid $dark-headers-color;
+        border-bottom: 0.3rem solid $dark-headers-color;
       }
     }
   }

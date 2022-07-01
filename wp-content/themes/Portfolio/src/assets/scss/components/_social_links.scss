@@ -1,29 +1,21 @@
 .social-links {
   a {
-    font-size: 18px;
+    font-size: 1.8rem;
     display: inline-block;
 
     line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
+    padding: 0.8rem 0;
+    margin-right: 0.4rem;
     border-radius: 50%;
     text-align: center;
-    width: 36px;
-    height: 36px;
+    width: 3.6rem;
+    height: 3.6rem;
     transition: 0.3s;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
-
-.social-links {
-  a {
     background: $dark-subtitles-color;
     color: $c-white;
 
     &:hover {
+      text-decoration: none;
       background: $dark-headers-color;
       color: $black !important;
     }

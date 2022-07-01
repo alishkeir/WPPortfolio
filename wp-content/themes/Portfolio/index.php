@@ -17,10 +17,10 @@
 
 
 <?php
-// get_header();
+get_header();
 
 get_template_part('template-parts/pages/home/home', '', []);
 
-// get_footer();
+get_footer();
 
 ?>

@@ -38,8 +38,3 @@ function build_theme_support()
 }
 
 
-function load_media_files()
-{
-  wp_enqueue_media();
-}
-add_action('admin_enqueue_scripts', 'load_media_files');

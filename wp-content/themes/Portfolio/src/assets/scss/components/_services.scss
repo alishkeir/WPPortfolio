@@ -1,0 +1,66 @@
+.services {
+  .icon-box {
+    margin-bottom: 2rem;
+
+    .icon {
+      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5.4rem;
+      height: 5.4rem;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+
+      background: $dark-titles-color;
+      border: 0.1rem solid $dark-titles-color;
+
+      i {
+        font-size: 2.4rem;
+        color: $main-white;
+      }
+    }
+
+    .title {
+      margin-left: 8rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .description {
+      margin-left: 8rem;
+      line-height: 2.4rem;
+      font-size: 1.4rem;
+    }
+
+    &:hover {
+      .icon {
+        background: $dark-subtitles-color;
+        border: 0.1rem solid $dark-main-background;
+      }
+
+      .title {
+        p {
+          color: $dark-titles-color;
+          &::selection {
+            background: $dark-main-selected-background !important;
+            color: $dark-main-selected-color !important;
+          }
+
+          &:hover {
+            color: $dark-subtitles-color;
+          }
+        }
+      }
+    }
+  }
+}

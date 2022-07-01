@@ -1,0 +1,40 @@
+.about {
+  overflow-x: hidden;
+
+  .content {
+    h3 {
+      font-weight: 700;
+      font-size: 2.6rem;
+
+      color: $dark-titles-color;
+      &::selection {
+        background: $dark-main-selected-background !important;
+        color: $dark-main-selected-color !important;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding-bottom: 1rem;
+      }
+
+      i {
+        font-size: 2rem;
+        padding-right: 0.2rem;
+
+        color: $dark-titles-color;
+        &::selection {
+          background: $dark-main-selected-background !important;
+          color: $dark-main-selected-color !important;
+        }
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

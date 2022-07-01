@@ -1,0 +1,44 @@
+section {
+  margin-bottom: 8rem;
+
+  .section-title {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+    .section-title h2 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 5rem;
+        height: 0.3rem;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.section-bg {
+  background-color: $dark-sub-background;
+}
+
+.section-title {
+  h2 {
+    font-size: 3rem;
+    color: $dark-headers-color !important;
+    &::selection {
+      background: $dark-main-selected-background !important;
+      color: $dark-main-selected-color !important;
+    }
+  }
+  &::after {
+    background: $dark-headers-color;
+  }
+}
