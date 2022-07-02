@@ -10,18 +10,17 @@ $skills = new WP_Query($args);
 
 
 <!--!__________________ Skills _____________________  -->
-<section id="skills" class="skills">
-  <div class="container">
-    <div class="section-title" data-aos="fade-up">
-      <h2>Skills</h2>
-    </div>
-    <div class="row skills-content m-auto">
-      <?php
 
-      if ($skills->have_posts()) {
+<?php if ($skills->have_posts()) { ?>
+  <section id="skills" class="skills section-bg">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div>
+      <div class="row skills-content m-auto">
+        <?php
         foreach ($skills->posts as $item) {
-
-      ?>
+        ?>
           <div class="skill">
 
             <img src="<?php echo wp_get_attachment_url(get_post_meta($item->ID, '_skill_icon', true)) ?>">
@@ -29,13 +28,13 @@ $skills = new WP_Query($args);
               <?php echo get_post_meta($item->ID, '_skill_name', true) ?>
             </h5>
           </div>
-      <?php
+        <?php
 
         }
-      }
 
-      ?>
+        ?>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+<?php  } ?>

@@ -8,7 +8,7 @@ $(document).ready(function () {
         {
           scrollTop: scrollto,
         },
-        1500,
+        200,
         "easeInOutExpo"
       );
     }

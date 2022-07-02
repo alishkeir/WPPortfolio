@@ -18,25 +18,25 @@
      <nav class="nav-menu">
        <ul>
          <li class="active">
-           <a href="#hero"><i class="bx bx-home"></i><span>Home</span></a>
+           <a href="/#hero"><i class="bx bx-home"></i><span>Home</span></a>
          </li>
          <li>
-           <a href="#about"><i class="bx bx-user"></i><span>About</span></a>
+           <a href="/#about"><i class="bx bx-user"></i><span>About</span></a>
          </li>
          <li>
-           <a href="#resume"><i class="bx bx-file"></i><span>Resume</span></a>
+           <a href="/#resume"><i class="bx bx-file"></i><span>Resume</span></a>
          </li>
          <li>
-           <a href="#portfolio"><i class="bx bx-book-content"></i><span>Projects</span></a>
+           <a href="/#portfolio"><i class="bx bx-book-content"></i><span>Projects</span></a>
          </li>
          <li>
-           <a href="#skills"><i class="bx bx-task"></i><span>Skills</span></a>
+           <a href="/#skills"><i class="bx bx-task"></i><span>Skills</span></a>
          </li>
          <li>
-           <a href="#services"><i class="bx bx-server"></i><span>Services</span></a>
+           <a href="/#services"><i class="bx bx-server"></i><span>Services</span></a>
          </li>
          <li>
-           <a href="#contact"><i class="bx bx-envelope"></i><span>Contact</span></a>
+           <a href="/#contact"><i class="bx bx-envelope"></i><span>Contact</span></a>
          </li>
          <li>
            <a href="assets/pdf/resume.pdf" download="Ali Shkeir - Resume">

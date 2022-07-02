@@ -5,6 +5,7 @@
   background: url(/wp-content/themes/Portfolio/src/assets/images/hero/dark.svg)
     top center;
   transition: all 0.5s;
+  margin-bottom: 0;
 
   @include breakpoint-down(small-desktop) {
     margin-left: 0;

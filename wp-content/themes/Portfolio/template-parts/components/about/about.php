@@ -35,11 +35,10 @@
           <h3>Web &amp; Mobile Developer.</h3>
           <p class="font-italic">
             I am a hardworking, detail oriented and
-            self-motivated web developer interested in
-            developing web applications, passionate about
-            programming, aiming continuously to learn new
-            skills and always striving for achieving
-            ambitions
+            self-motivated Gameplay Programmer interested in
+            developing games, passionate about
+            programming and aiming continuously to learn and improve my
+            skills.
           </p>
           <div class="row">
             <div class="col-lg-6">

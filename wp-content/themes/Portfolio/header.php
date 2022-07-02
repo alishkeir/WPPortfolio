@@ -23,9 +23,7 @@
   <link href="<?php echo get_stylesheet_directory_uri() . '/inc/includes/assets/css/bootstrap.min.css' ?>" rel="stylesheet" />
   <link href="<?php echo get_stylesheet_directory_uri() . '/inc/includes/assets/css/icofont.min.css' ?>" rel="stylesheet" />
   <link href="<?php echo get_stylesheet_directory_uri() . '/inc/includes/assets/css/boxicons.min.css' ?>" rel="stylesheet" />
-  <link href="<?php echo get_stylesheet_directory_uri() . '/inc/includes/assets/css/venobox.min.css' ?>" rel="stylesheet" />
   <link href="<?php echo get_stylesheet_directory_uri() . '/inc/includes/assets/css/font-awesome.min' ?>" rel="stylesheet" />
-  <link href="<?php echo get_stylesheet_directory_uri() . '/inc/includes/assets/css/owl.carousel.css' ?>" rel="stylesheet" />
   <!-- Main CSS File -->
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/dist/bundle.css' ?>" />
 </head>

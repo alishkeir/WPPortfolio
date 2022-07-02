@@ -13,7 +13,7 @@ $(document).on("click", ".nav-menu a, .scrollto", function (e) {
         {
           scrollTop: scrollto,
         },
-        1500,
+        200,
         "easeInOutExpo"
       );
 

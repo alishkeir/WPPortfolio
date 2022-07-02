@@ -1,5 +1,5 @@
   <!--!__________________ Resume _________________  -->
-  <section id="resume" class="resume">
+  <section id="resume" class="resume section-bg">
     <div class="container">
       <div class="section-title">
         <h2>Resume</h2>

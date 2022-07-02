@@ -1,0 +1,95 @@
+#content {
+  padding: 8rem;
+
+  @include breakpoint-down(small-desktop) {
+    padding: 6.5rem;
+  }
+
+  @include breakpoint-down(tablet) {
+    padding: 4.5rem;
+  }
+
+  @include breakpoint-down(mobile) {
+    padding: 3rem;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+
+  .wp-block-video {
+    width: fit-content;
+    margin: 0 auto 2rem;
+  }
+
+  p,
+  ul {
+    margin: 1rem auto;
+    display: block;
+    width: 75%;
+    @include breakpoint-down(mobile) {
+      width: 90%;
+    }
+  }
+
+  p {
+    line-height: 1.7;
+  }
+
+  ul {
+    padding-left: 2rem;
+    line-height: 2;
+  }
+
+  a {
+    display: block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-decoration: none !important;
+
+    &:hover {
+      color: $darkest-white-anchor !important;
+
+      strong {
+        border-bottom: 0.2rem solid $darkest-white-anchor;
+      }
+    }
+
+    strong {
+      border-bottom: 0.2rem solid $c-white;
+      display: block;
+      width: fit-content;
+    }
+  }
+
+  .tags {
+    margin-top: 3rem;
+    display: flex;
+
+    span {
+      margin-left: 0.7rem;
+      padding: 0.4rem 0.3rem;
+      border-radius: 0.6rem;
+
+      &:first-child {
+        margin-left: 1.4rem;
+      }
+
+      &.bp {
+        background: $c-bp;
+      }
+      &.c {
+        background: $c-cpp;
+      }
+      &.ue {
+        background: $c-ue;
+      }
+      &.vr {
+        background: $c-vr;
+      }
+    }
+  }
+}

@@ -29,14 +29,11 @@
     text-align: center;
     border-radius: 5rem;
     padding: 0.2rem 1.5rem;
-    background: $dark-main-background;
+    background: $dark-sub-background;
+    user-select: none;
 
     .filter-active {
       color: $dark-titles-color !important;
-      &::selection {
-        background: $dark-main-selected-background !important;
-        color: $dark-main-selected-color !important;
-      }
     }
 
     li {
