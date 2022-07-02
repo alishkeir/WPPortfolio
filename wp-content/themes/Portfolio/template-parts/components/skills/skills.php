@@ -19,17 +19,18 @@ $skills = new WP_Query($args);
       </div>
       <div class="row skills-content m-auto">
         <?php
+        $i = 1;
+
         foreach ($skills->posts as $item) {
         ?>
-          <div class="skill">
-
+          <div class="skill" data-aos="flip-left" data-aos-delay="<?php echo $i * 50; ?>">
             <img src="<?php echo wp_get_attachment_url(get_post_meta($item->ID, '_skill_icon', true)) ?>">
             <h5>
               <?php echo get_post_meta($item->ID, '_skill_name', true) ?>
             </h5>
           </div>
         <?php
-
+          $i++;
         }
 
         ?>

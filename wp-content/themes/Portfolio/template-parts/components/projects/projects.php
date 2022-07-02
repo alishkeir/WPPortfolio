@@ -14,7 +14,7 @@ $projects = new WP_Query($args);
   <section id="portfolio" class="portfolio">
     <div class="container">
       <div class="section-title">
-        <h2>Portfolio</h2>
+        <h2>Projects</h2>
         <p>
           From Unreal Engine, Blueprints, C++ and Virtual Reality for Oculus, check out my latest projects
         </p>

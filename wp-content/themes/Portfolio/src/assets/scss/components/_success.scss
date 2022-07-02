@@ -46,6 +46,11 @@
         -webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s
           forwards;
       }
+
+      @include breakpoint-down(mobile-small) {
+        min-width: 5.6rem;
+        min-height: 5.6rem;
+      }
     }
   }
 
@@ -132,13 +137,6 @@
   justify-content: center;
   align-items: center;
   color: #eee;
-}
-
-@media screen and(max-width:384px) {
-  .checkmark {
-    min-width: 5.6rem;
-    min-height: 5.6rem;
-  }
 }
 
 @keyframes stroke {

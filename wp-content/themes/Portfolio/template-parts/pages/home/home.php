@@ -8,7 +8,7 @@
 
   <?php get_template_part('template-parts/components/about/about') ?>
   <?php get_template_part('template-parts/components/resume/resume') ?>
-  <?php get_template_part('template-parts/components/portfolio/portfolio') ?>
+  <?php get_template_part('template-parts/components/projects/projects') ?>
   <?php get_template_part('template-parts/components/skills/skills') ?>
   <?php get_template_part('template-parts/components/contact/contact') ?>
 
