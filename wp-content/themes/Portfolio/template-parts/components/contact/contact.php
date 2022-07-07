@@ -44,7 +44,7 @@ if (str_contains($url, '.local'))
       </div>
 
       <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-        <form action="https://formsubmit.co/alishkeir_@hotmail.com" method="POST" class="email-form" enctype="multipart/form-data">
+        <form action="https://formsubmit.co/contact@alishkeir.me" method="POST" class="email-form" enctype="multipart/form-data">
           <input type="hidden" name="_subject" value="Email From Portfolio" />
 
           <input type="hidden" name="_template" value="box" />

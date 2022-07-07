@@ -44,7 +44,7 @@ if (str_contains($_SERVER['REQUEST_URI'], 'success'))
           <a href="<?php echo esc_attr($url_add) ?>#contact"><i class="bx bx-envelope"></i><span>Contact</span></a>
         </li>
         <li>
-          <a href="assets/pdf/resume.pdf" download="Ali Shkeir - Resume">
+          <a href="<?php echo get_stylesheet_directory_uri() . '/src/assets/pdf/Ali_Shkeir_Resume.pdf' ?>" download="Ali Shkeir - Resume">
             <i class="bx bx-download"></i><span>My CV</span>
           </a>
         </li>
