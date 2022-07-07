@@ -50,8 +50,7 @@ Thumbs.db
 
 /vendor/
 /uploads
-/wp-includes/js/dist
-/wp-includes/css/dist
+
 /wp-content/plugins/classic-editor
 /wp-content/uploads
 /wp-content/plugins/tuxedo-big-file-uploads
