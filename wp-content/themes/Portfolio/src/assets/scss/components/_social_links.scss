@@ -2,7 +2,6 @@
   a {
     font-size: 1.8rem;
     display: inline-block;
-
     line-height: 1;
     padding: 0.8rem 0;
     margin-right: 0.4rem;
@@ -10,6 +9,8 @@
     text-align: center;
     width: 3.6rem;
     height: 3.6rem;
+    min-width: 3.6rem;
+    min-height: 3.6rem;
     transition: 0.3s;
     background: $dark-subtitles-color;
     color: $c-white;

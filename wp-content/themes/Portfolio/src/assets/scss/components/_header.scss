@@ -23,6 +23,10 @@
       margin: 1.5rem auto;
       display: block;
       width: 12rem;
+      height: 12rem;
+      min-width: 12rem;
+      min-height: 12rem;
+
       border: 0.8rem solid $dark-subtitles-color;
     }
 
