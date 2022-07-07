@@ -11,9 +11,10 @@
  */
 
 
-wp_footer();
 
-get_template_part('template-parts/components/footer/footer', '', [])
+get_template_part('template-parts/components/footer/footer', '', []);
+
+wp_footer();
 
 ?>
 

@@ -26,6 +26,7 @@
   <link href="<?php echo get_stylesheet_directory_uri() . '/inc/includes/assets/css/font-awesome.min' ?>" rel="stylesheet" />
   <!-- Main CSS File -->
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/dist/bundle.css' ?>" />
+  <?php wp_head() ?>
 </head>
 
 <body class="dark">
