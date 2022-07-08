@@ -28,8 +28,8 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4 text-center" data-aos="fade-right">
-          <img src="<?php echo get_stylesheet_directory_uri() . '/src/assets/images/profile/profile-img.png' ?>" alt="" class="img-fluid" />
+        <div class="col-lg-4 heading text-center" data-aos="fade-right">
+          <img src="<?php echo get_stylesheet_directory_uri() . '/src/assets/images/svg/Font_Awesome_5_solid_code.svg' ?>" alt="" class="img-fluid" />
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content mt-5" data-aos="fade-left">
           <h3>Web &amp; Mobile Developer.</h3>

@@ -9,7 +9,7 @@ if (str_contains($_SERVER['REQUEST_URI'], 'success'))
 <header id="header">
   <div class="d-flex flex-column">
     <div class="profile">
-      <img src="<?php echo get_stylesheet_directory_uri() . '/src/assets/images/profile/profile-img.png' ?>" alt="Profile Photo" class="img-fluid rounded-circle" />
+      <img src="<?php echo get_stylesheet_directory_uri() . '/src/assets/images/profile/profile-img.jpg' ?>" alt="Profile Photo" class="img-fluid rounded-circle" />
       <h1 class="text-light">
         <a href="index.html">Ali Shkeir</a>
       </h1>
